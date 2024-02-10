@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>GPA CALCULATOR</h1>
+            <ul class="subjectlist" id="subjectlist">
+                <li class="subject">
+                    <p>SUBJECT</p>
+                    <p>CREDIT <img src="questionmark.png">
+                    </p>
+                    <P>SCORE <img src="questionmark.png"></P>
+                </li>
+                <li class="subject">
+                    <span onclick="deletesub()">x</span>
+                    <p class="subjectname">subject1</p>
+                    <input type="text" id="credit" class="inputbox">
+                    <input type="text" id="score" class="inputbox">
+                    <span onclick="addsubject()">+</span>
+                </li>
+            </ul>
+            <div class="gpa">
+                <button id="gpa" onclick="calculateGPA()">CALCULATE GPA</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
