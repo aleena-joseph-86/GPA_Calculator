@@ -10,7 +10,7 @@
     <div class="container">
         <div class="card">
             <h1>GPA CALCULATOR</h1>
-            <ul class="subjectlist" id="subjectlist">
+            <ul class="subjectmainlist" id="subjectlist">
                 <li class="subject">
                     <p>SUBJECT</p>
                     <p>CREDIT <img src="questionmark.png">
@@ -18,15 +18,15 @@
                     <P>SCORE <img src="questionmark.png"></P>
                 </li>
                 <li class="subject">
-                    <span onclick="deletesub()">x</span>
+                    <span>x</span>
                     <p class="subjectname">subject1</p>
-                    <input type="text" id="credit" class="inputbox">
-                    <input type="text" id="score" class="inputbox">
+                    <input type="number" class="credit" >
+                    <input type="number" class="score">
                     <span onclick="addsubject()">+</span>
                 </li>
             </ul>
             <div class="gpa">
-                <button id="gpa" onclick="calculateGPA()">CALCULATE GPA</button>
+                <button id="gpa">CALCULATE GPA</button>
             </div>
         </div>
     </div>
