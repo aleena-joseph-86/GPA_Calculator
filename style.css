@@ -52,7 +52,7 @@ body{
     justify-content:center;
 }
 
-.inputbox{
+.credit,.score{
     width:60px;
     background:lightblue;
     border:none;
